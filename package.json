@@ -2,7 +2,7 @@
   "name": "whaledividers",
   "displayName": "Whale Dividers",
   "description": "Dynamic dividers for your code.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "publisher": "desert",
   "author": {
     "name": "ThatDesert",
@@ -29,7 +29,7 @@
     "c",
     "java"
   ],
-  "icon": "icon-transparent.png",
+  "icon": "icon.png",
   "galleryBanner": {
     "color": "#164450",
     "theme": "dark"
@@ -164,6 +164,7 @@
     "@types/vscode": "^1.107.0",
     "@vscode/test-cli": "^0.0.12",
     "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.27.2",
     "eslint": "^9.39.1"
   },
   "dependencies": {

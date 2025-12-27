@@ -1,4 +1,4 @@
-<image src="./icon-transparent.png" width="20%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
+<image src="images/icon-transparent.png" width="20%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
 <h1 align="center">== Whale Dividers ==</h1>
 
 <div align="center">
@@ -10,7 +10,7 @@
 Create in-code dividers from shortcuts; helpful for sectioning code, making debug outputs more readable, or making your documentation look ✨pretty✨.
 <br>
 <br>
-<image src="./showcase.png" width="70%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
+<image src="images/showcase.png" width="70%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
 <br>
 <br>
 Whale Dividers turns quick shortcuts into full code snippets, with dynamic syntax adjustment based on the active programming language.
@@ -22,9 +22,9 @@ Whale Dividers turns quick shortcuts into full code snippets, with dynamic synta
 
 ## Usage
 
-To create a whale divider, type a shortcut like `##` and press enter to expand.
+To create a whale divider, type a shortcut — for instance, `##` — and press enter to expand.
 
-<image src="./examples.png" width="75%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
+<image src="images/examples.png" width="75%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
 
 <br>
 
@@ -37,6 +37,7 @@ By specifying a type flag, you can have the whale divider autofill into a print 
 ### Shortcut Format
 
 `[type][width]#[content]#`
+
 ||`[type]`|`[width]`|`#`|`[content]`|`#`|
 |---|---|---|---|---|---|
 | **Format** |`p`rint<br>`c`omment | Any integer between 1 and 72 ||Any text to use as divider title||
