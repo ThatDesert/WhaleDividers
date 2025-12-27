@@ -52,15 +52,14 @@ Below are some examples of shortcuts, and what snippets they would expand to (no
 
 <div align="center">
 
-| Shortcut | Expanded Snippet |
-|---	  |---     |
-| `##`  	| → `====================` |
-| `p##`  	| → `console.log("====================")` <span style="font-size: 8px;">JS Files</span> |
-| `4##`  	| → `====` |
-| `#Hello#` | → `=== Hello, World ===` |
-| `c9#Hey#` | → `/*== Hey ==*/` <span style="font-size: 8px;">C Files</span> |
-| `p7#🙋‍♂️#` | → `print("== 🙋‍♂️ ==")` <span style="font-size: 8px;">Python Files</span> |
-|||
+| Shortcut  	| Expanded Snippet                      	|
+|-----------	|---------------------------------------	|
+| `##`      	| → `====================`                	|
+| `p##`     	| → `console.log("====================")` 	|
+| `4##`     	| → `====`                                	|
+| `#Hello#` 	| → `=== Hello, World ===`                	|
+| `c9#Hey#` 	| → `/*== Hey ==*/`                       	|
+| `p7#🙋‍♂️#`  	| → `print("== 🙋‍♂️ ==")`                   	|
 
 </div>
 
