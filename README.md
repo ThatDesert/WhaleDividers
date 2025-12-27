@@ -1,16 +1,16 @@
-<image src="images/icon-transparent.png" width="20%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
-<h1 align="center">== Whale Dividers ==</h1>
+<img src="images/icon-transparent.png" width="20%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
+<h1 align="center">=== Whale Dividers ===</h1>
 
 <div align="center">
 
-[Usage](#usage) · [Examples](#examples) · [Config](#configuration) · [Why?](#why-whale)
+[🐋 Usage](#usage) · [⌨️ Examples](#examples) · [🔧 Config](#configuration) · [🐳 Why 'Whale'?](#why-whale)
 
 </div>
 
 Create in-code dividers from shortcuts; helpful for sectioning code, making debug outputs more readable, or making your documentation look ✨pretty✨.
 <br>
 <br>
-<image src="images/showcase.png" width="70%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="images/showcase.png" width="70%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
 <br>
 <br>
 Whale Dividers turns quick shortcuts into full code snippets, with dynamic syntax adjustment based on the active programming language.
@@ -24,7 +24,7 @@ Whale Dividers turns quick shortcuts into full code snippets, with dynamic synta
 
 To create a whale divider, type a shortcut — for instance, `##` — and press enter to expand.
 
-<image src="images/examples.png" width="75%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
+<img src="images/examples.png" width="75%" align="center" style="display: block; margin-left: auto; margin-right: auto;">
 
 <br>
 
@@ -52,7 +52,7 @@ Below are some examples of shortcuts, and what snippets they would expand to (no
 
 <div align="center">
 
-| Shortcut| Expanded Snippet|
+| Shortcut | Expanded Snippet |
 |---	  |---     |
 | `##`  	| → `====================` |
 | `p##`  	| → `console.log("====================")` <span style="font-size: 8px;">JS Files</span> |
