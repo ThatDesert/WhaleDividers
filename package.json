@@ -1,0 +1,168 @@
+{
+  "name": "whaledividers",
+  "displayName": "Whale Dividers",
+  "description": "Dynamic dividers for your code.",
+  "version": "1.0.0",
+  "publisher": "desert",
+  "author": {
+    "name": "ThatDesert",
+    "url": "https://github.com/ThatDesert"
+  },
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "keywords": [
+    "divider",
+    "sections",
+    "comment",
+    "snippet",
+    "format",
+    "javascript",
+    "python",
+    "c",
+    "java"
+  ],
+  "icon": "icon-transparent.png",
+  "galleryBanner": {
+    "color": "#164450",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "sponsor": {
+    "url": "https://thatollie.gumroad.com/coffee"
+  },
+  "activationEvents": [
+    "onLanguage:bat",
+    "onLanguage:css",
+    "onLanguage:c",
+    "onLanguage:cpp",
+    "onLanguage:csharp",
+    "onLanguage:dockercompose",
+    "onLanguage:dockerfile",
+    "onLanguage:go",
+    "onLanguage:haskell",
+    "onLanguage:html",
+    "onLanguage:java",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact",
+    "onLanguage:json",
+    "onLanguage:jsonc",
+    "onLanguage:latex",
+    "onLanguage:lua",
+    "onLanguage:makefile",
+    "onLanguage:markdown",
+    "onLanguage:objective-c",
+    "onLanguage:pascal",
+    "onLanguage:perl",
+    "onLanguage:perl6",
+    "onLanguage:php",
+    "onLanguage:powershell",
+    "onLanguage:python",
+    "onLanguage:r",
+    "onLanguage:ruby",
+    "onLanguage:rust",
+    "onLanguage:sass",
+    "onLanguage:scss",
+    "onLanguage:shellscript",
+    "onLanguage:sql",
+    "onLanguage:swift",
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact",
+    "onLanguage:tex",
+    "onLanguage:vb",
+    "onLanguage:plaintext"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Whale Dividers",
+      "properties": {
+        "whaledividers.defaultWidth": {
+          "type": "integer",
+          "default": 20,
+          "minimum": 1,
+          "description": "Default width used for dividers when not otherwise specified"
+        },
+        "whaledividers.spaceComments": {
+          "type": "boolean",
+          "default": true,
+          "description": "When creating dividers in comments, add space between divider and comment delimiters"
+        },
+        "whaledividers.spaceTitle": {
+          "type": "boolean",
+          "default": true,
+          "description": "When creating dividers with text, add spaces on either side of the text within the divider"
+        },
+        "whaledividers.alwaysWhale": {
+          "type": "boolean",
+          "default": true,
+          "description": "When creating dividers with text that is the same length or longer than the divider width, always include a whale character on each side"
+        },
+        "whaledividers.shorterTail": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "When creating dividers with an uneven number of whale characters (`#whaledividers.whaleCharacter#`) on each side, whether to make the right-hand side (the divider tail) the shorter side"
+        },
+        "whaledividers.whaleCharacter": {
+          "type": "string",
+          "default": "=",
+          "maxLength": 1,
+          "minLength": 1,
+          "markdownDescription": "The character used to construct a whale divider (`=` looks most like a whale!)"
+        },
+        "whaledividers.advanced.controlCharacter": {
+          "type": "string",
+          "default": "#",
+          "maxLength": 1,
+          "minLength": 1,
+          "description": "The special character used to delimit typed-out divider snippets (this character will not be able to appear in divider titles)"
+        },
+        "whaledividers.advanced.maxWidth": {
+          "type": "integer",
+          "default": 72,
+          "minimum": 1,
+          "description": "Maximum width for a divider (default is 72 as per PEP8)"
+        },
+        "whaledividers.advanced.snippetTextParser": {
+          "type": "string",
+          "enum": [
+            "ascii",
+            "unicode",
+            "unicodeFormat"
+          ],
+          "markdownEnumDescriptions": [
+            "Only ASCII characters from codepoints 32 (space ` `) to 126 (tilde `~`)",
+            "Most printable Unicode characters (majority emoji support as this includes the zero-width joiner)",
+            "Most printable Unicode characters, like above, but also includes the [format character codepage](https://en.wikipedia.org/wiki/Unicode_character_property#:~:text=Cf) (this may provide support for country flag emojis and bidirectional text)"
+          ],
+          "enumItemLabels": [
+            "ASCII",
+            "Unicode Printable",
+            "Unicode Printable + Format Control"
+          ],
+          "default": "unicode",
+          "description": "What parser to use when creating whale divider titles (the text that sits between the control characters)"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.107.0",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.39.1"
+  },
+  "dependencies": {
+    "@vscode/vsce": "^3.7.1"
+  }
+}
